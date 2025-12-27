@@ -1,0 +1,943 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ol,
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+span,
+div,
+header,
+footer,
+section,
+main,
+article,
+input,
+textarea,
+select,
+button,
+label,
+table,
+tr,
+td,
+th,
+tbody,
+thead,
+tfoot {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Handlee', 'cursive';
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* header start  */
+
+.menuBar {
+  z-index: 9999;
+  position: relative;
+}
+.menuBar span {
+  font-size: 50px;
+  color: #17a2b8;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 5px;
+}
+
+.menuBar .navbar-nav .nav-item .nav-link {
+  color: #00394f;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 5px;
+  padding: 30px 15px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  display: block;
+  cursor: pointer;
+}
+.menuBar .navbar-nav .nav-item .nav-link.active,
+.menuBar .navbar-nav .nav-item .nav-link:hover {
+  color: #17a2b8;
+}
+
+.JoinBtn a {
+  padding: 7px 20px;
+  border-radius: 30px;
+  background: #17a2b8;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.JoinBtn a:hover {
+  background: #036877da;
+  color: #fff;
+}
+
+.menuBar .dropdown-menu {
+  z-index: 10000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.menuBar .dropdown-menu .dropdown-item {
+  color: #00394f;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  display: block;
+  padding: 10px 20px;
+}
+.menuBar .dropdown-menu .dropdown-item:hover,
+.menuBar .dropdown-menu .dropdown-item.active {
+  background-color: #0d7b8b;
+  color: #fff;
+}
+
+/* header end  */
+
+/* bannerPart start  */
+.bannerPart {
+  padding: 60px 0px 0px;
+  background: #17a2b8;
+}
+
+.bannerContent h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Handlee', 'cursive';
+}
+.bannerContent h1 {
+  font-size: 72px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Handlee', 'cursive';
+}
+.bannerContent p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 30px;
+}
+
+.bannerContent a {
+  display: inline-block;
+  padding: 13px 35px;
+  background: #00394f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bannerContent a:hover {
+  background: #002230;
+}
+
+/* bannerPart end  */
+
+/* servicePart start  */
+.servicePart {
+  padding: 100px 0px 50px;
+  background: #fff;
+}
+
+.serviceItem {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.serviceItem img {
+  fill: #17a2b8;
+}
+.serviceCont h4 {
+  color: #00394f;
+  font-size: 24px;
+  font-family: 'Handlee', 'cursive';
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.serviceCont p {
+  color: #666666;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* servicePart end  */
+
+/* aboutPart start  */
+.aboutPart {
+  padding: 50px 0px;
+  background: #fff;
+}
+
+.aboutCont h4 {
+  position: relative;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #17a2b8;
+  display: inline-block;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 20px;
+}
+
+.aboutCont h4::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -60px;
+  width: 50px;
+  height: 2px;
+  background: #17a2b8;
+}
+
+.aboutCont h3 {
+  font-size: 40px;
+  color: #00394f;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Handlee', 'cursive';
+}
+
+.aboutCont p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 30px;
+}
+
+.aboutCont2 ul li {
+  padding: 8px 0px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+}
+
+.aboutCont2 ul li i {
+  color: #17a2b8;
+}
+
+.aboutCont a {
+  padding: 15px 25px;
+  border-radius: 40px;
+  display: inline-block;
+  background: #00394f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.aboutCont a:hover {
+  background: #0d7b8b;
+}
+
+/* aboutPart end  */
+
+/* classPart start  */
+.classPart {
+  padding: 50px 0px;
+  background: #fff;
+}
+
+.classItem {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.classContent {
+  background: #f8f9fa;
+}
+
+.classContentFisrt h5 {
+  font-size: 24px;
+  color: #00394f;
+  font-weight: 700;
+  font-family: 'Handlee', 'cursive';
+  margin-bottom: 10px;
+}
+.classContentFisrt p {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.classContentSecond span {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  width: 50%;
+  display: inline-block;
+}
+
+.classContentSecond a {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 40px;
+  background: #0d7b8b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.classContentSecond a:hover {
+  background: #00394f;
+}
+/* classPart end  */
+
+/* bookPart start  */
+form {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bookeHead {
+  background: #00394f;
+}
+
+.bookeHead h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'Handlee', 'cursive';
+}
+
+.formReg {
+  background: #17a2b8;
+}
+
+.formReg button {
+  background: #002230;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.formReg button:hover {
+  background: #00394f;
+}
+/* bookPart end  */
+
+/* teacherPart start  */
+.teacherPart {
+  padding: 50px 0px;
+  background: #fff;
+}
+
+.teacherHead h4 {
+  display: inline-block;
+  position: relative;
+  color: #0d7b8b;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 10px;
+}
+
+.teacherHead h4::before {
+  position: absolute;
+  top: 7px;
+  right: -60px;
+  width: 50px;
+  height: 2px;
+  background: #0d7b8b;
+  content: '';
+  display: block;
+}
+.teacherHead h4::after {
+  position: absolute;
+  top: 7px;
+  left: -60px;
+  width: 50px;
+  height: 2px;
+  background: #0d7b8b;
+  content: '';
+  display: block;
+}
+
+.teacherHead h3 {
+  font-size: 40px;
+  color: #00394f;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Handlee', 'cursive';
+}
+
+.teachersProfile {
+  transition: all linear 0.4s;
+  margin-bottom: 30px !important;
+}
+
+.techerImage {
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 230px;
+  height: 230px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.techerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #17a2b8;
+  opacity: 0;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  z-index: 2 !important;
+}
+
+.teachersProfile:hover .imgOverlay {
+  opacity: 0.7;
+}
+.imgOverlay ul li a {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  z-index: 3;
+}
+
+.imgOverlay ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.imgOverlay ul li a:hover {
+  background: #fff;
+  color: #00394f;
+  border-color: #002230;
+}
+
+.teacherCont h4 {
+  font-size: 22px;
+  color: #00394f;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Handlee', 'cursive';
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+}
+
+.teacherCont p {
+  color: #666666;
+  font-weight: 600;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  font-style: italic;
+  text-transform: capitalize;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* teacherPart end  */
+
+/* testPart start  */
+.testPart {
+  padding: 50px 0px;
+  background: #fff;
+}
+
+.testBox {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.testBox p {
+  color: #666666;
+  font-weight: 600;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-family: 'Nunito', sans-serif;
+}
+
+.testBox p i {
+  font-size: 40px;
+  color: #17a2b8;
+}
+
+.authImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.authImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.authContent h5 {
+  font-size: 20px;
+  color: #00394f;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Handlee', 'cursive';
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+}
+
+.authContent p {
+  color: #666666;
+  font-weight: 600;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-family: 'Nunito', sans-serif;
+}
+.testPart .owl-dots {
+  text-align: center;
+}
+.testPart .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #17a2b8;
+  margin: 0px 5px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+}
+.testPart .owl-dots .owl-dot.active {
+  background: #002230;
+}
+
+.testPart .owl-stage-outer {
+  padding: 20px 0px 50px;
+}
+/* testPart end  */
+
+/* blogPart start  */
+.blogPart {
+  padding: 50px 0px;
+  background: #fff;
+}
+.classContentFisrt span {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+.classContentFisrt span i {
+  color: #17a2b8;
+}
+/* blogPart end  */
+
+/* footer start  */
+.footer {
+  padding: 80px 0px 20px;
+  background: #00394f;
+}
+
+.footerAbout svg path {
+  fill: #17a2b8;
+}
+
+.footerAbout span {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Handlee', 'cursive';
+}
+.footerAbout p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.footerAbout ul {
+  display: flex;
+  gap: 20px;
+}
+
+.footerAbout ul li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #17a2b8;
+  color: #0d7b8b;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+}
+
+.footerAbout ul li a:hover {
+  background: #fff;
+  color: #002230;
+  border-color: #002230;
+}
+
+.getInTouch h4 {
+  color: #17a2b8;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Handlee', 'cursive';
+}
+.getInTouch p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.getInTouch h5 {
+  font-size: 22px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Handlee', 'cursive';
+  margin-bottom: 10px;
+}
+.getInTouch i {
+  color: #17a2b8;
+  font-size: 20px;
+}
+
+.getInTouch ul li a {
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.getInTouch ul li a:hover {
+  text-decoration: underline;
+}
+
+.getInTouch ul li a i {
+  color: #fff;
+}
+
+.getInTouch form .ftBtnSub {
+  background: #17a2b8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.getInTouch form .ftBtnSub:hover {
+  background: #002230;
+}
+
+.hr {
+  border: 1px solid #17a2b8;
+}
+
+.copy p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+}
+/* footer end  */
+
+/* scrollBtn start  */
+.scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #17a2b8;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  animation: bounce 2s ease-in-out infinite;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+  -moz-animation: bounce 2s ease-in-out infinite;
+  -ms-animation: bounce 2s ease-in-out infinite;
+  -o-animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scrollBtn.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* scrollBtn end  */
+
+/* aboutPage start  */
+.aboutPage {
+  padding: 100px 0px;
+}
+
+.aboutPage h2 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  font-family: 'Handlee', 'cursive';
+}
+.aboutPage .breadcrumb .breadcrumb-item a,
+.aboutPage .breadcrumb .breadcrumb-item {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  cursor: pointer;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.aboutPage .breadcrumb .breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+/* aboutPage end  */
