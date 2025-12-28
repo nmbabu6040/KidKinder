@@ -47,3 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// isotope start
+var grid = document.querySelector('.grid');
+
+var iso = new Isotope(grid, {
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows', // 🔥 overlap বন্ধ রাখে
+  percentPosition: true,
+});
+
+// filter click
+document.querySelectorAll('.filter-btn').forEach((btn) => {
+  btn.addEventListener('click', function () {
+    let filterValue = this.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
+  });
+});
