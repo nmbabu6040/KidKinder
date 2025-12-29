@@ -1122,4 +1122,44 @@ form {
   margin-bottom: 20px;
   font-family: 'Handlee', 'cursive';
 }
+
+.authorBox {
+  padding: 30px;
+  background: #17a2b8;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.boxImg {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.authorBox h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Handlee', 'cursive';
+  margin-bottom: 10px;
+}
+.authorBox p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+
+.searchBar button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #17a2b8;
+  background: #fff;
+}
 /* blogDetail end  */
