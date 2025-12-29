@@ -82,15 +82,3 @@ Frontend Developer (Practice Project)
 
 This project is open for learning and practice.
 Feel free to use, modify, and improve it for educational purposes.
-
-If you want, I can also:
-
-Customize this README for GitHub profile
-
-Make a more professional version
-
-Add screenshots section
-
-Write README in Bangla + English
-
-Just tell me 🔥
